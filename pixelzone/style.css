@@ -1,0 +1,355 @@
+/* FONT AWESOME */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+/* FONTES DO PROJETO */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0d8; /* Cor de fundo do corpo */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 60px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: #607848; /* Cor de fundo dos botões */
+  color: #eee;
+  border-radius: 5px;
+  transition: background 500ms ease;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #789048; /* Cor de fundo dos botões ao passar o mouse */
+}
+
+.headline {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+  letter-spacing: 2px;
+  color: #607848; /* Cor do título */
+}
+
+/* NAVBAR */
+#navbar {
+  width: 100%;
+  height: 80px;
+  background: #607848; /* Cor de fundo da navbar */
+  color: #eee;
+  position: fixed;
+}
+
+#navbar-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar-itens {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+#navbar-itens li {
+  padding: 10px;
+}
+#navbar-itens li a:hover {
+  background-color: #789048; /* Fundo ao passar o mouse */
+  color: #f0f0d8; /* Texto com contraste */
+  transform: scale(1.1); /* Leve aumento no hover */
+}
+
+#navbar-itens li a:active {
+  background-color: #c0d860; /* Cor ao clicar */
+  transform: scale(0.95); /* Leve redução no clique */
+}
+/* SHOWCASE */
+#showcase {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/cenario.jpg) no-repeat center center/cover;
+  color: #eee;
+
+  /* OVERLAY */
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+}
+
+#showcase-container {
+  text-align: center;
+}
+
+#showcase-container h2 {
+  font-size: 2.5rem;
+}
+
+#showcase-container p {
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+}
+
+
+/* oq fazemos */
+#features {
+  width: 100%;
+  background: #f0f0d8; /* Mantive o fundo escuro para contraste */
+  color: #eee;
+  padding: 50px;
+}
+
+#features-container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #607848; /* Cor de fundo das features */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.feature p {
+  padding-top: 15px;
+}
+
+.feature-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* ideias */
+#ideias {
+  width: 100%;
+  padding: 50px;
+}
+
+#ideias-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#itens {
+  width: 650px;
+}
+
+.item {
+  display: flex;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+/* Seção Quem Somos */
+#about-us {
+  padding: 50px 20px;
+  background-color: #f0f0d8; /* Fundo claro */
+  text-align: center;
+}
+
+#about-us .headline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #607848; /* Título com a cor principal */
+}
+
+#about-us-container p {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  color: #010101; /* Texto */
+}
+
+/* Estilo dos membros da equipe */
+
+
+#team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #92a183; /* Fundo secundário */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #212618; /* Destaque nas fotos */
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #eee; /* Nome dos membros */
+  margin: 10px 0;
+}
+
+.team-member p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eee; /* Texto dos membros */
+}
+
+
+
+/* TESTIMONIALS */
+
+
+#testimonials-container {
+  display: block; /* Deve ser block ou flex */
+  visibility: visible; /* Deve estar visível */
+  opacity: 1; /* Não deve estar transparente */
+  margin-bottom: 20px; /* Espaçamento entre os depoimentos e o botão */
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #607848; /* Cor de fundo dos depoimentos */
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.testimonial-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+#testimonials {
+  display: flex;
+  flex-direction: column; /* Organiza os itens na vertical */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  min-height: 100vh; /* Garante que a seção ocupe 100% da altura da janela */
+  text-align: center; /* Centraliza o texto */
+  background-color: #a5b4969a;
+}
+
+.headline {
+  font-family: 'Poppins', sans-serif;/* Aplica a fonte ao título */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px; /* Espaço entre o título e o botão */
+}
+
+.btn-header {
+  text-decoration: none;
+  color: #eee; /* Cor do texto */
+  padding: 15px 40px; /* Tamanho do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: all 0.3s ease; /* Efeito suave para o hover */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  background-color: #607848; /* Cor de fundo */
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.btn-header:hover {
+  background-color: #789048; /* Cor do botão ao passar o mouse */
+  color: #f0f0d8; /* Cor do texto ao passar o mouse */
+  transform: scale(1.1); /* Leve aumento no botão ao passar o mouse */
+}
+
+.btn-header:active {
+  background-color: #c0d860; /* Cor do botão ao clicar */
+  transform: scale(0.95); /* Leve redução no clique */
+}
+
+/* CONTATO */
+#contato {
+  background-color: #f0f0d8; /* Fundo claro */
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contato-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contato-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#contato-container b {
+  color: #607848; /* Cor verde para o título em negrito */
+}
+
+
+.contato-info {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+/* FOOTER */
+#footer {
+  background: #607848; /* Cor de fundo do rodapé */
+  text-align: center;   /* Centralizando o texto */
+  color: #eee;          /* Cor do texto */
+  padding: 30px 20px;   /* Aumentando o espaçamento */
+  font-size: 1rem;      /* Ajustando o tamanho da fonte para melhorar a legibilidade */
+  margin-top: 50px;     /* Adicionando margem superior para separação do conteúdo anterior */
+}
